@@ -1,0 +1,1 @@
+The purpose of this repository is to provide a demo of the PHP CI server described on http://jenkins-php.org/.  The included Vagrantfile will create a virtual machine, install Jenkins and the required PHP and Jenkins Plugins.  Once the Vagrant guest machine is running Jenkins can be accessed at http://192.168.33.10:8080
