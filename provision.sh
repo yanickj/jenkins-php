@@ -28,8 +28,8 @@ echo '# Starting Jenkins'
 service jenkins start
 
 echo '# Installing Jenkins Plug-ins'
-wget --quiet /home/vagrant/jenkins-cli.jar http://127.0.0.1:8080/jnlpJars/jenkins-cli.jar
-java -jar /home/vagrant/jenkins-cli.jar -s http://127.0.0.1:8080 install-plugin \
+wget --quiet http://127.0.0.1:8080/jnlpJars/jenkins-cli.jar
+java -jar jenkins-cli.jar -s http://127.0.0.1:8080 install-plugin \
 checkstyle cloverphp dry htmlpublisher jdepend plot pmd violations xunit git
 
 echo '# Restarting Jenkins'
